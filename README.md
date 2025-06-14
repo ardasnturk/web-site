@@ -1,150 +1,67 @@
-# Personal Portfolio Website
+# Arda Senturk - Kişisel Portföy Web Sitesi
 
-A modern, responsive personal portfolio website built with React, TypeScript, and Tailwind CSS. Deployed on GitHub Pages.
+Modern, responsive kişisel portföy web sitesi - React, TypeScript ve Tailwind CSS ile geliştirilmiş. GitHub Pages üzerinde yayınlanmış.
 
-## Features
+🌐 **Canlı Site**: [ardasenturk.de](https://ardasenturk.de)
 
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
-- **Modern UI**: Clean, professional design with smooth animations
-- **Interactive Navigation**: Smooth scrolling between sections with active state tracking
-- **Mobile-Friendly**: Hamburger menu for mobile devices
-- **Contact Form**: Integrated contact form with email functionality
-- **Project Showcase**: Beautiful project cards with technology tags
-- **Social Media Integration**: Links to all your social profiles
+## ✨ Özellikler
 
-## Tech Stack
+- **Responsive Tasarım**: Masaüstü, tablet ve mobil cihazlarda mükemmel çalışır
+- **Modern UI**: Temiz, profesyonel tasarım ve akıcı animasyonlar
+- **İnteraktif Navigasyon**: Bölümler arası yumuşak geçiş ve aktif durum takibi
+- **Mobil Dostu**: Mobil cihazlar için hamburger menü
+- **İletişim Formu**: Entegre iletişim formu ve e-posta işlevselliği
+- **Sosyal Medya Entegrasyonu**: Tüm sosyal profillere bağlantılar
+- **Performans Odaklı**: Optimized build ve hızlı yükleme
 
-- **React 19** - Latest version with modern features
-- **TypeScript** - Type-safe development
+## 🛠 Teknoloji Stack
+
+- **React 19** - En son sürüm ve modern özellikler
+- **TypeScript** - Type-safe geliştirme
 - **Tailwind CSS** - Utility-first CSS framework
-- **Vite** - Fast build tool and development server
-- **GitHub Pages** - Free hosting for static sites
+- **Vite** - Hızlı build aracı ve development server
+- **GitHub Pages** - Ücretsiz static site hosting
 
-## Getting Started
+## 👨‍💻 Hakkımda
 
-### Prerequisites
+React-Native Developer olarak 3+ yıl deneyime sahibim. Güzel tasarım ile sağlam işlevselliği birleştiren dijital çözümler üretmeyi seviyorum. Modern teknolojiler kullanarak ölçeklenebilir mobil uygulamalar geliştirmeye odaklanıyorum.
 
-- Node.js (v18 or higher)
-- npm or yarn
+**Konum**: München, Germany  
+**E-posta**: ardasnturk@me.com  
+**Uzmanlık Alanları**: React-Native, TypeScript, JavaScript, Node.js
+
+## 🚀 Kurulum ve Çalıştırma
+
+### Gereksinimler
+
+- Node.js (v18 veya üzeri)
+- npm veya yarn
 - Git
 
-### Installation
+### Adımlar
 
-1. Clone the repository:
+1. Repository'yi klonlayın:
 
    ```bash
-   git clone https://github.com/yourusername/web-site.git
+   git clone https://github.com/ardasnturk/web-site.git
    cd web-site
    ```
 
-2. Install dependencies:
+2. Bağımlılıkları yükleyin:
 
    ```bash
    npm install
    ```
 
-3. Start the development server:
+3. Development server'ı başlatın:
 
    ```bash
    npm run dev
    ```
 
-4. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+4. Tarayıcınızda [http://localhost:5173](http://localhost:5173) adresini açın.
 
-## Customization
-
-### Personal Information
-
-Update the following files with your personal information:
-
-1. **src/components/Home.tsx** - Update name, title, and introduction
-2. **src/components/About.tsx** - Update about text, skills, and profile information
-3. **src/components/Projects.tsx** - Add your projects with descriptions and links
-4. **src/components/Contact.tsx** - Update email and social media links
-
-### Styling
-
-The project uses Tailwind CSS with a custom color scheme. You can customize:
-
-- **Colors**: Update the primary color scheme in `tailwind.config.js`
-- **Typography**: Modify font families and sizes
-- **Spacing**: Adjust padding and margins
-- **Components**: Add custom component styles in `src/index.css`
-
-### Profile Images
-
-Replace the placeholder profile images:
-
-1. Add your profile image to the `public/` directory
-2. Update image references in the components
-3. Recommended sizes: 400x400px for About section, 200x200px for Hero section
-
-## Deployment
-
-### GitHub Pages (Recommended)
-
-1. **Update Configuration**:
-
-   - Change `yourusername` in `package.json` homepage URL
-   - Update repository name in `vite.config.ts` base path
-   - Ensure the base path matches your repository name
-
-2. **Deploy**:
-
-   ```bash
-   npm run deploy
-   ```
-
-3. **Enable GitHub Pages**:
-   - Go to your repository settings
-   - Navigate to Pages section
-   - Select "Deploy from a branch"
-   - Choose `gh-pages` branch
-
-### Automatic Deployment with GitHub Actions
-
-The project includes a GitHub Actions workflow for automatic deployment:
-
-1. **Setup**:
-
-   - The workflow file is in `.github/workflows/deploy.yml`
-   - It automatically deploys when you push to the main branch
-
-2. **Configure**:
-   - Go to repository Settings > Pages
-   - Set Source to "GitHub Actions"
-
-### Manual Deployment Steps
-
-If you prefer manual deployment:
-
-1. **Build the project**:
-
-   ```bash
-   npm run build
-   ```
-
-2. **Deploy to GitHub Pages**:
-
-   ```bash
-   npm run deploy
-   ```
-
-3. **Access your site**:
-   - Your site will be available at: `https://yourusername.github.io/web-site`
-
-## Environment Variables
-
-For additional functionality, you can add environment variables:
-
-```bash
-# .env.local
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
-```
-
-## Project Structure
+## 📁 Proje Yapısı
 
 ```
 web-site/
@@ -153,61 +70,107 @@ web-site/
 │   └── index.html
 ├── src/
 │   ├── components/
-│   │   ├── Header.tsx
-│   │   ├── Home.tsx
-│   │   ├── About.tsx
-│   │   ├── Projects.tsx
-│   │   └── Contact.tsx
-│   ├── App.tsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.tsx
-├── package.json
-├── tailwind.config.js
-├── vite.config.ts
-└── README.md
+│   │   ├── Header.tsx      # Navigasyon ve header
+│   │   ├── Home.tsx        # Ana sayfa / Hero section
+│   │   ├── About.tsx       # Hakkımda bölümü
+│   │   ├── Projects.tsx    # Projeler (şu anda devre dışı)
+│   │   └── Contact.tsx     # İletişim formu ve bilgileri
+│   ├── App.tsx            # Ana uygulama komponenti
+│   ├── App.css           # Custom stiller
+│   ├── index.css         # Global stiller ve Tailwind imports
+│   └── main.tsx          # React uygulamasının giriş noktası
+├── package.json          # Proje bağımlılıkları ve scripts
+├── tailwind.config.js    # Tailwind CSS konfigürasyonu
+├── vite.config.ts        # Vite build konfigürasyonu
+├── CNAME                 # Custom domain konfigürasyonu
+└── README.md            # Bu dosya
 ```
 
-## Available Scripts
+## 🎨 Özelleştirme
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run lint` - Run ESLint
-- `npm run preview` - Preview production build
-- `npm run deploy` - Deploy to GitHub Pages
+### Renk Şeması
 
-## Browser Support
+Proje, `tailwind.config.js` dosyasında tanımlı custom primary renk paleti kullanıyor:
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+```javascript
+primary: {
+  50: "#eff6ff",   // En açık
+  100: "#dbeafe",  // Açık
+  500: "#3b82f6",  // Ana renk (Mavi)
+  600: "#2563eb",  // Koyu
+  900: "#1e3a8a",  // En koyu
+}
+```
 
-## Performance
+### İçerik Güncelleme
 
-- Lighthouse Score: 90+ (Performance, Accessibility, Best Practices, SEO)
-- Optimized images and assets
-- Lazy loading for better performance
-- Minimal bundle size with tree shaking
+Ana bileşenlerdeki kişisel bilgileri güncellemek için:
 
-## Contributing
+1. **src/components/Home.tsx** - İsim, başlık ve tanıtım
+2. **src/components/About.tsx** - Hakkımda metni ve yetenekler
+3. **src/components/Contact.tsx** - E-posta ve sosyal medya linkleri
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+## 📱 Sosyal Medya Linkleri
 
-## License
+- **LinkedIn**: [ardasnturk](https://linkedin.com/in/ardasnturk)
+- **GitHub**: [ardasnturk](https://github.com/ardasnturk)
+- **Twitter**: [ardasnturk](https://twitter.com/ardasnturk)
+- **E-posta**: ardasnturk@me.com
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 🚀 Deployment
 
-## Acknowledgments
+### GitHub Pages (Otomatik)
 
-- Design inspiration from modern portfolio websites
-- Built with React and modern web technologies
-- Deployed on GitHub Pages for free hosting
+Proje GitHub Actions ile otomatik deploy edilir:
+
+1. `main` branch'e push yaptığınızda otomatik olarak build ve deploy edilir
+2. Site [ardasenturk.de](https://ardasenturk.de) adresinde yayınlanır
+3. Custom domain CNAME dosyası ile yapılandırılmıştır
+
+### Manuel Deployment
+
+```bash
+# Build oluşturma
+npm run build
+
+# GitHub Pages'e deploy
+npm run deploy
+```
+
+## 📊 Performans
+
+- **Lighthouse Score**: 90+ (Performance, Accessibility, Best Practices, SEO)
+- **Modern React 19** features ile optimize edilmiş
+- **Tree shaking** ile minimal bundle boyutu
+- **Lazy loading** ve performans optimizasyonları
+
+## 🔧 Kullanılabilir Scriptler
+
+```bash
+npm run dev      # Development server başlatma
+npm run build    # Production build oluşturma
+npm run lint     # ESLint çalıştırma
+npm run preview  # Production build önizleme
+npm run deploy   # GitHub Pages'e deploy
+```
+
+## 🌐 Browser Desteği
+
+- Chrome (en son)
+- Firefox (en son)
+- Safari (en son)
+- Edge (en son)
+
+## 📄 Lisans
+
+Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
+
+## 🙏 Teşekkürler
+
+- Modern portföy web sitelerinden tasarım ilhamı
+- React ve modern web teknolojileri ile geliştirilmiştir
+- GitHub Pages üzerinde ücretsiz hosting
 
 ---
 
-**Note**: Remember to update all placeholder content with your actual information before deploying!
+**Not**: Bu site sürekli güncellenmekte ve yeni özellikler eklenmektedir. Geri bildirimlerinizi [ardasnturk@me.com](mailto:ardasnturk@me.com) adresine gönderebilirsiniz!
