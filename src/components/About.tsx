@@ -1,17 +1,22 @@
 // No import needed for React 19 with new JSX transform
+import { useTranslation } from "react-i18next";
+import profileImage from "../assets/Profil.jpeg";
 
 const About = () => {
+  const { t } = useTranslation();
   const skills = [
+    "React-Native",
     "JavaScript",
     "TypeScript",
-    "React-Native",
-    "React",
+    "NestJS",
     "Node.js",
+    "Swift",
+    "Unity",
     "Python",
+    "AI/ML",
+    "React",
     "Next.js",
     "Tailwind CSS",
-    "HTML5",
-    "CSS3",
     "MongoDB",
     "PostgreSQL",
     "Git",
@@ -24,8 +29,12 @@ const About = () => {
           {/* Profile Image */}
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <div className="w-full max-w-md mx-auto aspect-square rounded-2xl bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center text-white text-8xl font-bold shadow-2xl">
-                AS
+              <div className="w-full max-w-md mx-auto aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src={profileImage}
+                  alt="Arda Senturk"
+                  className="w-full h-full object-cover"
+                />
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary-200 rounded-full opacity-20"></div>
@@ -36,36 +45,18 @@ const About = () => {
           {/* Content */}
           <div className="order-1 lg:order-2">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              About Me
+              {t("about.title")}
             </h2>
             <div className="space-y-4 text-gray-600 text-lg leading-relaxed mb-8">
-              <p>
-                I'm a passionate React-Native developer with over 3 years of
-                experience creating digital solutions that combine beautiful
-                design with robust functionality. I love turning complex
-                problems into simple, elegant solutions. I'm currently focused
-                on building scalable mobile applications using modern
-                technologies like React-Native, TypeScript, and Node.js. I'm
-                always excited to work on projects that make a positive impact.
-              </p>
-              <p>
-                When I'm not coding, you can find me exploring new technologies,
-                contributing to open-source projects, or enjoying a good book. I
-                believe in continuous learning and staying up-to-date with the
-                latest industry trends.
-              </p>
-              <p>
-                I'm currently focused on building scalable mobile applications
-                using modern technologies like React-Native, TypeScript, and
-                Node.js. I'm always excited to work on projects that make a
-                positive impact.
-              </p>
+              <p>{t("about.description1")}</p>
+              <p>{t("about.description2")}</p>
+              <p>{t("about.description3")}</p>
             </div>
 
             {/* Skills */}
             <div className="mb-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Skills & Technologies
+                {t("about.skillsTitle")}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (

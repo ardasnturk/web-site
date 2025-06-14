@@ -1,0 +1,54 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "portfolio": "Portfolio"
+  },
+  "home": {
+    "title": "Arda Senturk",
+    "subtitle": "React-Native Developer",
+    "description": "I'm a passionate developer who loves creating beautiful, functional mobile applications. I specialize in React-Native, TypeScript, and modern mobile technologies to build exceptional user experiences.",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "I have been involved in software development for approximately 15 years, and currently have multiple applications live on both the App Store and Play Store. I have been working as a React-Native Developer at a company for over 3 years, expanding my experience through various projects during this time.",
+    "description2": "Throughout my career, I have participated in different projects and provided various training sessions. I have developed many different projects using React-Native, NestJS, NodeJS, Unity, and Swift languages. Each project has given me new perspectives and expanded my technology range.",
+    "description3": "Currently, I am trying to improve myself in artificial intelligence with Python. My passion for continuous learning and discovering new technologies ensures that I always stay current and provide the best solutions in my projects.",
+    "skillsTitle": "Skills & Technologies",
+    "downloadResume": "Download Resume"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "I'm always interested in new opportunities and collaborations. Let's connect and discuss how we can work together!",
+    "sendMessage": "Send Me a Message",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "sendButton": "Send Message",
+    "letsConnect": "Let's Connect",
+    "namePlaceholder": "Arda Senturk",
+    "emailPlaceholder": "ardasnturk@me.com",
+    "messagePlaceholder": "Your message here..."
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Mobile applications I developed with React-Native. Each one offers a solution to a different problem.",
+    "github": "GitHub",
+    "website": "Website",
+    "weightly": {
+      "title": "Weightly",
+      "description": "Weight tracking and healthy living app. A modern mobile application that allows users to track their weight, set goals and make progress."
+    },
+    "howWell": {
+      "title": "How Well?",
+      "description": "Fun question-and-answer game that can be played among friends. Test how well you know each other and have a good time."
+    }
+  },
+  "common": {
+    "openMenu": "Open main menu"
+  }
+}

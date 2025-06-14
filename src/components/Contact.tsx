@@ -1,6 +1,8 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -77,11 +79,10 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Get In Touch
+            {t("contact.title")}
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            I'm always interested in new opportunities and collaborations. Let's
-            connect and discuss how we can work together!
+            {t("contact.subtitle")}
           </p>
         </div>
 
@@ -89,7 +90,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-              Send Me a Message
+              {t("contact.sendMessage")}
             </h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -97,7 +98,7 @@ const Contact = () => {
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Name
+                  {t("contact.name")}
                 </label>
                 <input
                   type="text"
@@ -107,7 +108,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                  placeholder="Arda Senturk"
+                  placeholder={t("contact.namePlaceholder")}
                 />
               </div>
               <div>
@@ -115,7 +116,7 @@ const Contact = () => {
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Email
+                  {t("contact.email")}
                 </label>
                 <input
                   type="email"
@@ -125,7 +126,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                  placeholder="ardasnturk@me.com"
+                  placeholder={t("contact.emailPlaceholder")}
                 />
               </div>
               <div>
@@ -133,7 +134,7 @@ const Contact = () => {
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Message
+                  {t("contact.message")}
                 </label>
                 <textarea
                   id="message"
@@ -143,14 +144,14 @@ const Contact = () => {
                   required
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors resize-none"
-                  placeholder="Your message here..."
+                  placeholder={t("contact.messagePlaceholder")}
                 ></textarea>
               </div>
               <button
                 type="submit"
                 className="w-full px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
               >
-                Send Message
+                {t("contact.sendButton")}
               </button>
             </form>
           </div>
@@ -159,7 +160,7 @@ const Contact = () => {
           <div className="space-y-8">
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-                Let's Connect
+                {t("contact.letsConnect")}
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center">

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 interface HeaderProps {
   activeSection: string;
@@ -6,12 +8,13 @@ interface HeaderProps {
 
 const Header = ({ activeSection }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const navigation = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    // { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: t("header.home"), href: "#home" },
+    { name: t("header.about"), href: "#about" },
+    { name: t("header.projects"), href: "#projects" },
+    { name: t("header.contact"), href: "#contact" },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -32,7 +35,7 @@ const Header = ({ activeSection }: HeaderProps) => {
               onClick={() => scrollToSection("home")}
               className="text-xl font-bold text-gray-900 hover:text-primary-600 transition-colors"
             >
-              Portfolio
+              {t("header.portfolio")}
             </button>
           </div>
 
@@ -51,6 +54,7 @@ const Header = ({ activeSection }: HeaderProps) => {
                 {item.name}
               </button>
             ))}
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile menu button */}
@@ -59,7 +63,7 @@ const Header = ({ activeSection }: HeaderProps) => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">{t("common.openMenu")}</span>
               {!isMenuOpen ? (
                 <svg
                   className="block h-6 w-6"
@@ -110,6 +114,9 @@ const Header = ({ activeSection }: HeaderProps) => {
                   {item.name}
                 </button>
               ))}
+              <div className="px-3 py-2 border-t border-gray-100 mt-2 pt-2">
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>
         )}

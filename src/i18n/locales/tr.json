@@ -1,0 +1,54 @@
+{
+  "header": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "contact": "İletişim",
+    "portfolio": "Portföy"
+  },
+  "home": {
+    "title": "Arda Senturk",
+    "subtitle": "React-Native Geliştirici",
+    "description": "Güzel ve fonksiyonel mobil uygulamalar yaratmayı seven tutkulu bir geliştiriciyim. React-Native, TypeScript ve modern mobil teknolojilerde uzmanlaşarak olağanüstü kullanıcı deneyimleri oluşturuyorum.",
+    "viewWork": "Çalışmalarımı Gör",
+    "getInTouch": "İletişime Geç"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "description1": "Yaklaşık 15 yıldır yazılım ile ilgileniyorum ve şu anda App Store ile Play Store'da bir çok farklı uygulamam yayında. 3 senedir aşkın süredir bir firmada React-Native Developer olarak çalışıyorum ve bu süre boyunca farklı projelerde yer alarak deneyimimi genişlettim.",
+    "description2": "Kariyerim boyunca farklı projelerde yer aldım ve çeşitli eğitimler verdim. React-Native, NestJS, NodeJS, Unity ve Swift dilleri ile birçok farklı proje geliştirdim. Her proje bana yeni perspektifler kazandırdı ve teknoloji yelpazemi genişletti.",
+    "description3": "Şu anda kendimi Python ile yapay zeka konusunda geliştirmeye çalışıyorum. Sürekli öğrenmeye ve yeni teknolojileri keşfetmeye olan tutkum, her zaman güncel kalmasamı ve projelerimde en iyi çözümleri sunmamı sağlıyor.",
+    "skillsTitle": "Yetenekler ve Teknolojiler",
+    "downloadResume": "Özgeçmişi İndir"
+  },
+  "contact": {
+    "title": "İletişime Geçin",
+    "subtitle": "Yeni fırsatlar ve işbirlikleri konusunda her zaman ilgiliyim. Bağlantı kuralım ve nasıl birlikte çalışabileceğimizi konuşalım!",
+    "sendMessage": "Bana Mesaj Gönder",
+    "name": "Ad",
+    "email": "E-posta",
+    "message": "Mesaj",
+    "sendButton": "Mesaj Gönder",
+    "letsConnect": "Bağlantı Kuralım",
+    "namePlaceholder": "Arda Senturk",
+    "emailPlaceholder": "ardasnturk@me.com",
+    "messagePlaceholder": "Mesajınızı buraya yazın..."
+  },
+  "projects": {
+    "title": "Projelerim",
+    "subtitle": "React-Native ile geliştirdiğim mobil uygulamalar. Her biri farklı bir problem için çözüm sunuyor.",
+    "github": "GitHub",
+    "website": "Web Sitesi",
+    "weightly": {
+      "title": "Weightly",
+      "description": "Kilo takibi ve sağlıklı yaşam uygulaması. Kullanıcıların kilolarını takip etmelerini, hedef belirlemelerini ve ilerleme kaydetmelerini sağlayan modern mobil uygulama."
+    },
+    "howWell": {
+      "title": "How Well?",
+      "description": "Arkadaşlar arası oynanabilen eğlenceli soru-cevap oyunu. Birbirinizi ne kadar iyi tanıdığınızı test edin ve keyifli vakit geçirin."
+    }
+  },
+  "common": {
+    "openMenu": "Ana menüyü aç"
+  }
+}
