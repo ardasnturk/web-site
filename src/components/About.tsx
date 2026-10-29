@@ -5,15 +5,22 @@ import profileImage from "../assets/Profil.jpeg";
 const About = () => {
   const { t } = useTranslation();
   const skills = [
+    "Swift",
+    "SwiftUI",
     "React-Native",
     "JavaScript",
     "TypeScript",
     "NestJS",
     "Node.js",
-    "Swift",
+    "SwiftData",
+    "HealthKit",
+    "WidgetKit",
+    "watchOS",
+    "Supabase",
     "Unity",
     "Python",
     "AI/ML",
+    "Claude Code",
     "React",
     "Next.js",
     "Tailwind CSS",

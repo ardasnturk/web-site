@@ -8,16 +8,16 @@
   },
   "home": {
     "title": "Arda Senturk",
-    "subtitle": "React-Native Developer",
-    "description": "I'm a passionate developer who loves creating beautiful, functional mobile applications. I specialize in React-Native, TypeScript, and modern mobile technologies to build exceptional user experiences.",
+    "subtitle": "iOS & React-Native Developer",
+    "description": "I build private, fast and beautiful apps for iPhone, iPad and Apple Watch — natively with SwiftUI and cross-platform with React-Native — plus open-source tools that make shipping apps easier.",
     "viewWork": "View My Work",
     "getInTouch": "Get In Touch"
   },
   "about": {
     "title": "About Me",
     "description1": "I have been involved in software development for approximately 15 years, and currently have multiple applications live on both the App Store and Play Store. I have been working as a React-Native Developer at a company for over 3 years, expanding my experience through various projects during this time.",
-    "description2": "Throughout my career, I have participated in different projects and provided various training sessions. I have developed many different projects using React-Native, NestJS, NodeJS, Unity, and Swift languages. Each project has given me new perspectives and expanded my technology range.",
-    "description3": "Currently, I am trying to improve myself in artificial intelligence with Python. My passion for continuous learning and discovering new technologies ensures that I always stay current and provide the best solutions in my projects.",
+    "description2": "Throughout my career, I have participated in different projects and provided various training sessions. I have developed many projects with React-Native, NestJS, NodeJS, Unity and Swift. Recently I rebuilt my own apps natively in SwiftUI, with Apple Watch apps, widgets, Apple Health and Siri support.",
+    "description3": "I also build open-source developer tools around AI coding agents such as Claude Code — from automating App Store listings to driving coding agents on my Mac from my iPhone. My passion for continuous learning keeps me current and helps me deliver the best solutions in my projects.",
     "skillsTitle": "Skills & Technologies",
     "downloadResume": "Download Resume"
   },
@@ -36,16 +36,79 @@
   },
   "projects": {
     "title": "My Projects",
-    "subtitle": "Mobile applications I developed with React-Native. Each one offers a solution to a different problem.",
+    "subtitle": "Apps live on the App Store, apps launching soon, and open-source tools I share on GitHub.",
     "github": "GitHub",
     "website": "Website",
-    "weightly": {
-      "title": "Weightly",
-      "description": "Weight tracking and healthy living app. A modern mobile application that allows users to track their weight, set goals and make progress."
+    "appStore": "App Store",
+    "testFlight": "TestFlight",
+    "latestUpdate": "Latest update",
+    "allRepos": "All public repositories on GitHub",
+    "status": {
+      "live": "Live on the App Store",
+      "comingSoon": "Coming soon",
+      "openSource": "Open source"
     },
-    "howWell": {
-      "title": "How Well?",
-      "description": "Fun question-and-answer game that can be played among friends. Test how well you know each other and have a good time."
+    "groups": {
+      "live": {
+        "title": "Live on the App Store",
+        "subtitle": "Apps you can download today."
+      },
+      "comingSoon": {
+        "title": "Coming Soon",
+        "subtitle": "Finished apps on their way to the App Store. Their websites are already live."
+      },
+      "openSource": {
+        "title": "Open Source",
+        "subtitle": "Tools and apps whose code is public on GitHub, MIT licensed."
+      }
+    },
+    "items": {
+      "weightly": {
+        "title": "Weightly",
+        "description": "Weight tracker with a smart trend line that smooths out daily swings, so you always see where you're really heading. No account, no ads, your data stays on your devices.",
+        "update": "Version 2.0 is a complete native SwiftUI rebuild: weekly rate and goal date range, two-way Apple Health sync, interactive widgets, Apple Watch and Siri."
+      },
+      "finly": {
+        "title": "Finly",
+        "description": "Budget and expense log for iPhone and Apple Watch. Type “coffee 4.50” and you're done — Finly picks the category, keeps you on budget and reminds you of subscriptions. No account, no bank login.",
+        "update": "Finly 2 is rebuilt natively for iOS; version 2.0.1 adds iPhone Duo layouts and improved landscape and larger-text support."
+      },
+      "lunavia": {
+        "title": "Lunavia",
+        "description": "Private period and cycle tracker. Predictions for your next period and fertile window, symptom logging in seconds and sourced health articles — everything stays on your iPhone.",
+        "update": "Launched on the App Store in October 2026, in 14 languages."
+      },
+      "howWell": {
+        "title": "How Well?",
+        "description": "Fun question-and-answer game that can be played among friends. Test how well you know each other and have a good time."
+      },
+      "kickoff": {
+        "title": "Kickoff",
+        "description": "Football live scores, lineups, stats and alerts from thousands of competitions, free. Kickoff Pro adds AI forecasts for every match and lets you manage the team yourself.",
+        "update": "Live Activities, universal links for shared matches and a website in 14 languages."
+      },
+      "atleva": {
+        "title": "Atleva",
+        "description": "No-equipment home workouts. Pick a goal, tap your focus areas on the body map and get a plan that adapts to how you feel, with 119 exercise videos that work offline."
+      },
+      "vitrin": {
+        "title": "Vitrin",
+        "description": "Builds your whole store listing from your app's code: ASO metadata, screenshots, creatives and App Preview videos, validated against Apple's and Google's rules and uploaded only after your approval. Runs inside Claude Code.",
+        "update": "Version 1.0.0 released in October 2026, with Vitrin Studio, a local web UI for the whole flow."
+      },
+      "remoteCode": {
+        "title": "Remote Code",
+        "description": "Drive Claude Code, Codex and Gemini CLI on your Mac from your iPhone or iPad. Follow responses, diffs and terminal output live and approve every action — end-to-end encrypted, no server, no account.",
+        "update": "Version 1.2.0: Mac app via DMG or Homebrew, iPhone app on TestFlight."
+      },
+      "a11y": {
+        "title": "RN Accessibility Automation",
+        "description": "Self-hosted accessibility crawler for Expo and React Native apps. Explores screens with Appium, audits elements against WCAG 2.2 and shows the results in a local dashboard."
+      },
+      "pinGenerator": {
+        "title": "Map Pin Generator",
+        "description": "Small TypeScript tool that turns SVG icons into map pin PNGs in any size and writes the marker list to mapSettings.json."
+      }
     }
   },
   "common": {

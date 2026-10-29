@@ -8,16 +8,16 @@
   },
   "home": {
     "title": "Arda Senturk",
-    "subtitle": "React-Native Geliştirici",
-    "description": "Güzel ve fonksiyonel mobil uygulamalar yaratmayı seven tutkulu bir geliştiriciyim. React-Native, TypeScript ve modern mobil teknolojilerde uzmanlaşarak olağanüstü kullanıcı deneyimleri oluşturuyorum.",
+    "subtitle": "iOS & React-Native Geliştirici",
+    "description": "iPhone, iPad ve Apple Watch için gizliliğe önem veren, hızlı ve güzel uygulamalar geliştiriyorum — SwiftUI ile yerel, React-Native ile çapraz platform. Bunun yanında uygulama yayınlamayı kolaylaştıran açık kaynak araçlar yazıyorum.",
     "viewWork": "Çalışmalarımı Gör",
     "getInTouch": "İletişime Geç"
   },
   "about": {
     "title": "Hakkımda",
     "description1": "Yaklaşık 15 yıldır yazılım ile ilgileniyorum ve şu anda App Store ile Play Store'da bir çok farklı uygulamam yayında. 3 senedir aşkın süredir bir firmada React-Native Developer olarak çalışıyorum ve bu süre boyunca farklı projelerde yer alarak deneyimimi genişlettim.",
-    "description2": "Kariyerim boyunca farklı projelerde yer aldım ve çeşitli eğitimler verdim. React-Native, NestJS, NodeJS, Unity ve Swift dilleri ile birçok farklı proje geliştirdim. Her proje bana yeni perspektifler kazandırdı ve teknoloji yelpazemi genişletti.",
-    "description3": "Şu anda kendimi Python ile yapay zeka konusunda geliştirmeye çalışıyorum. Sürekli öğrenmeye ve yeni teknolojileri keşfetmeye olan tutkum, her zaman güncel kalmasamı ve projelerimde en iyi çözümleri sunmamı sağlıyor.",
+    "description2": "Kariyerim boyunca farklı projelerde yer aldım ve çeşitli eğitimler verdim. React-Native, NestJS, NodeJS, Unity ve Swift ile birçok farklı proje geliştirdim. Son olarak kendi uygulamalarımı Apple Watch uygulamaları, widget'lar, Apple Sağlık ve Siri desteğiyle SwiftUI ile yerel olarak yeniden yazdım.",
+    "description3": "Claude Code gibi yapay zeka kodlama ajanları etrafında açık kaynak geliştirici araçları da üretiyorum — App Store sayfalarını otomatikleştirmekten Mac'teki kodlama ajanlarını iPhone'dan yönetmeye kadar. Sürekli öğrenme tutkum, güncel kalmamı ve projelerimde en iyi çözümleri sunmamı sağlıyor.",
     "skillsTitle": "Yetenekler ve Teknolojiler",
     "downloadResume": "Özgeçmişi İndir"
   },
@@ -36,16 +36,79 @@
   },
   "projects": {
     "title": "Projelerim",
-    "subtitle": "React-Native ile geliştirdiğim mobil uygulamalar. Her biri farklı bir problem için çözüm sunuyor.",
+    "subtitle": "App Store'da yayında olan uygulamalarım, yakında çıkacak olanlar ve GitHub'da paylaştığım açık kaynak araçlar.",
     "github": "GitHub",
     "website": "Web Sitesi",
-    "weightly": {
-      "title": "Weightly",
-      "description": "Kilo takibi ve sağlıklı yaşam uygulaması. Kullanıcıların kilolarını takip etmelerini, hedef belirlemelerini ve ilerleme kaydetmelerini sağlayan modern mobil uygulama."
+    "appStore": "App Store",
+    "testFlight": "TestFlight",
+    "latestUpdate": "Son güncelleme",
+    "allRepos": "GitHub'daki tüm açık repolar",
+    "status": {
+      "live": "App Store'da yayında",
+      "comingSoon": "Yakında",
+      "openSource": "Açık kaynak"
     },
-    "howWell": {
-      "title": "How Well?",
-      "description": "Arkadaşlar arası oynanabilen eğlenceli soru-cevap oyunu. Birbirinizi ne kadar iyi tanıdığınızı test edin ve keyifli vakit geçirin."
+    "groups": {
+      "live": {
+        "title": "App Store'da Yayında",
+        "subtitle": "Bugün indirebileceğiniz uygulamalar."
+      },
+      "comingSoon": {
+        "title": "Yakında",
+        "subtitle": "App Store yolunda olan tamamlanmış uygulamalar. Web siteleri şimdiden yayında."
+      },
+      "openSource": {
+        "title": "Açık Kaynak",
+        "subtitle": "Kodu GitHub'da herkese açık, MIT lisanslı araçlar ve uygulamalar."
+      }
+    },
+    "items": {
+      "weightly": {
+        "title": "Weightly",
+        "description": "Günlük dalgalanmaları yumuşatan akıllı trend çizgisiyle kilo takibi; gerçekte nereye gittiğinizi her zaman görürsünüz. Hesap yok, reklam yok, verileriniz cihazlarınızda kalır.",
+        "update": "2.0 sürümü SwiftUI ile baştan yazıldı: haftalık değişim ve hedef tarih aralığı, çift yönlü Apple Sağlık senkronizasyonu, etkileşimli widget'lar, Apple Watch ve Siri."
+      },
+      "finly": {
+        "title": "Finly",
+        "description": "iPhone ve Apple Watch için bütçe ve harcama takibi. “kahve 85” yazın, bitti — Finly kategoriyi bulur, bütçede kalmanıza yardım eder ve abonelikleri hatırlatır. Hesap yok, banka girişi yok.",
+        "update": "Finly 2 iOS için yerel olarak yeniden yazıldı; 2.0.1 sürümü iPhone Duo düzenleri ile geliştirilmiş yatay ekran ve büyük yazı desteği getiriyor."
+      },
+      "lunavia": {
+        "title": "Lunavia",
+        "description": "Gizli regl ve döngü takibi. Sonraki regl ve doğurgan dönem tahminleri, saniyeler içinde semptom kaydı ve kaynaklı sağlık makaleleri — her şey iPhone'unuzda kalır.",
+        "update": "Ekim 2026'da 14 dilde App Store'da yayınlandı."
+      },
+      "howWell": {
+        "title": "How Well?",
+        "description": "Arkadaşlar arası oynanabilen eğlenceli soru-cevap oyunu. Birbirinizi ne kadar iyi tanıdığınızı test edin ve keyifli vakit geçirin."
+      },
+      "kickoff": {
+        "title": "Kickoff",
+        "description": "Binlerce turnuvadan canlı futbol skorları, kadrolar, istatistikler ve bildirimler, ücretsiz. Kickoff Pro her maç için yapay zeka tahmini ekler ve takımı kendiniz yönetmenizi sağlar.",
+        "update": "Canlı Etkinlikler, paylaşılan maçlar için evrensel bağlantılar ve 14 dilde web sitesi."
+      },
+      "atleva": {
+        "title": "Atleva",
+        "description": "Ekipmansız ev antrenmanları. Bir hedef seçin, vücut haritasında odak bölgelerinize dokunun ve nasıl hissettiğinize göre uyum sağlayan bir plan alın; 119 egzersiz videosu internetsiz çalışır."
+      },
+      "vitrin": {
+        "title": "Vitrin",
+        "description": "Mağaza sayfanızı uygulamanızın kodundan üretir: ASO metinleri, ekran görüntüleri, kreatifler ve App Preview videoları. Hepsini Apple ve Google kurallarına göre doğrular, yalnızca onayladıklarınızı yükler. Claude Code içinde çalışır.",
+        "update": "1.0.0 sürümü Ekim 2026'da yayınlandı; tüm akış için yerel web arayüzü Vitrin Studio ile birlikte."
+      },
+      "remoteCode": {
+        "title": "Remote Code",
+        "description": "Mac'inizdeki Claude Code, Codex ve Gemini CLI'ı iPhone veya iPad'den yönetin. Yanıtları, diff'leri ve terminal çıktısını canlı izleyin, her işlemi onaylayın — uçtan uca şifreli, sunucu yok, hesap yok.",
+        "update": "1.2.0 sürümü: Mac uygulaması DMG veya Homebrew ile, iPhone uygulaması TestFlight'ta."
+      },
+      "a11y": {
+        "title": "RN Accessibility Automation",
+        "description": "Expo ve React Native uygulamaları için kendi sunucunuzda çalışan erişilebilirlik tarayıcısı. Appium ile ekranları gezer, öğeleri WCAG 2.2'ye göre denetler ve sonuçları yerel bir panelde gösterir."
+      },
+      "pinGenerator": {
+        "title": "Map Pin Generator",
+        "description": "SVG ikonlardan istediğiniz boyutta harita pini PNG'leri üreten ve işaret listesini mapSettings.json'a yazan küçük bir TypeScript aracı."
+      }
     }
   },
   "common": {
