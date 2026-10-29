@@ -21,7 +21,7 @@ const Contact = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     // Handle form submission (you can integrate with a service like Formspree, Netlify Forms, etc.)
-    const mailtoLink = `mailto:ardasnturk@me.com?subject=Portfolio Contact: ${formData.name}&body=${formData.message}%0D%0A%0D%0AFrom: ${formData.email}`;
+    const mailtoLink = `mailto:hello@ardasnturk.com?subject=Portfolio Contact: ${formData.name}&body=${formData.message}%0D%0A%0D%0AFrom: ${formData.email}`;
     window.location.href = mailtoLink;
   };
 
@@ -55,7 +55,7 @@ const Contact = () => {
     },
     {
       name: "Email",
-      url: "mailto:ardasnturk@me.com",
+      url: "mailto:hello@ardasnturk.com",
       icon: (
         <svg
           className="w-6 h-6"
@@ -182,10 +182,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium text-gray-900">Email</h4>
                     <a
-                      href="mailto:ardasnturk@me.com"
+                      href="mailto:hello@ardasnturk.com"
                       className="text-primary-600 hover:text-primary-700"
                     >
-                      ardasnturk@me.com
+                      hello@ardasnturk.com
                     </a>
                   </div>
                 </div>

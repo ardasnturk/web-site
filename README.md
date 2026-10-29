@@ -27,7 +27,7 @@ Modern, responsive kişisel portföy web sitesi - React, TypeScript ve Tailwind 
 React-Native Developer olarak 3+ yıl deneyime sahibim. Güzel tasarım ile sağlam işlevselliği birleştiren dijital çözümler üretmeyi seviyorum. Modern teknolojiler kullanarak ölçeklenebilir mobil uygulamalar geliştirmeye odaklanıyorum.
 
 **Konum**: München, Germany  
-**E-posta**: ardasnturk@me.com  
+**E-posta**: hello@ardasnturk.com  
 **Uzmanlık Alanları**: React-Native, TypeScript, JavaScript, Node.js
 
 ## 🚀 Kurulum ve Çalıştırma
@@ -115,7 +115,7 @@ Ana bileşenlerdeki kişisel bilgileri güncellemek için:
 - **LinkedIn**: [ardasnturk](https://linkedin.com/in/ardasnturk)
 - **GitHub**: [ardasnturk](https://github.com/ardasnturk)
 - **Twitter**: [ardasnturk](https://twitter.com/ardasnturk)
-- **E-posta**: ardasnturk@me.com
+- **E-posta**: hello@ardasnturk.com
 
 ## 🚀 Deployment
 
@@ -173,4 +173,4 @@ Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için [LICENSE](LIC
 
 ---
 
-**Not**: Bu site sürekli güncellenmekte ve yeni özellikler eklenmektedir. Geri bildirimlerinizi [ardasnturk@me.com](mailto:ardasnturk@me.com) adresine gönderebilirsiniz!
+**Not**: Bu site sürekli güncellenmekte ve yeni özellikler eklenmektedir. Geri bildirimlerinizi [hello@ardasnturk.com](mailto:hello@ardasnturk.com) adresine gönderebilirsiniz!

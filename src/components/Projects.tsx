@@ -1,21 +1,23 @@
 // No import needed for React 19 with new JSX transform
 import { useTranslation } from "react-i18next";
 import weightlyIcon from "../assets/projects/weightly/icon.png";
-import weightlyScreenshot from "../assets/projects/weightly/screenshot.jpg";
+import weightlyBanner from "../assets/projects/weightly/banner.jpg";
 import finlyIcon from "../assets/projects/finly/icon.png";
-import finlyScreenshot from "../assets/projects/finly/screenshot.jpg";
+import finlyBanner from "../assets/projects/finly/banner.jpg";
 import lunaviaIcon from "../assets/projects/lunavia/icon.png";
-import lunaviaScreenshot from "../assets/projects/lunavia/screenshot.jpg";
+import lunaviaBanner from "../assets/projects/lunavia/banner.jpg";
 import howWellIcon from "../assets/projects/howwell/icon.png";
-import howWellScreenshot from "../assets/projects/howwell/screenshot.jpg";
+import howWellBanner from "../assets/projects/howwell/banner.jpg";
 import kickoffIcon from "../assets/projects/kickoff/icon.png";
-import kickoffScreenshot from "../assets/projects/kickoff/screenshot.jpg";
+import kickoffBanner from "../assets/projects/kickoff/banner.jpg";
 import atlevaIcon from "../assets/projects/atleva/icon.png";
-import atlevaScreenshot from "../assets/projects/atleva/screenshot.jpg";
+import atlevaBanner from "../assets/projects/atleva/banner.jpg";
 import remoteCodeIcon from "../assets/projects/remote-code/icon.png";
-import remoteCodeScreenshot from "../assets/projects/remote-code/screenshot.jpg";
+import remoteCodeBanner from "../assets/projects/remote-code/banner.jpg";
 import vitrinIcon from "../assets/projects/vitrin/icon.png";
-import vitrinScreenshot from "../assets/projects/vitrin/screenshot.jpg";
+import vitrinBanner from "../assets/projects/vitrin/banner.jpg";
+import a11yBanner from "../assets/projects/a11y/banner.jpg";
+import pinGeneratorBanner from "../assets/projects/pin-generator/banner.jpg";
 
 type ProjectStatus = "live" | "comingSoon" | "openSource";
 
@@ -28,9 +30,8 @@ interface Project {
   websiteUrl?: string;
   testFlightUrl?: string;
   icon?: string;
-  screenshot?: string;
-  // Wide images (e.g. social preview banners) fill the header instead of a phone screenshot
-  wideScreenshot?: boolean;
+  // Wide 1200×630 preview banner, as used for the project's social preview
+  banner?: string;
 }
 
 const projects: Project[] = [
@@ -39,7 +40,7 @@ const projects: Project[] = [
     status: "live",
     technologies: ["Swift", "SwiftUI", "SwiftData", "HealthKit", "WidgetKit", "watchOS"],
     icon: weightlyIcon,
-    screenshot: weightlyScreenshot,
+    banner: weightlyBanner,
     appStoreUrl: "https://apps.apple.com/app/id6746693008",
     websiteUrl: "https://weightly.ardasnturk.com",
   },
@@ -48,7 +49,7 @@ const projects: Project[] = [
     status: "live",
     technologies: ["Swift", "SwiftUI", "watchOS", "WidgetKit", "App Intents"],
     icon: finlyIcon,
-    screenshot: finlyScreenshot,
+    banner: finlyBanner,
     appStoreUrl: "https://apps.apple.com/app/id6747941491",
     websiteUrl: "https://finly.ardasnturk.com",
   },
@@ -57,7 +58,7 @@ const projects: Project[] = [
     status: "live",
     technologies: ["Swift", "SwiftUI", "HealthKit", "WidgetKit", "On-device AI"],
     icon: lunaviaIcon,
-    screenshot: lunaviaScreenshot,
+    banner: lunaviaBanner,
     appStoreUrl: "https://apps.apple.com/app/id6823805889",
     websiteUrl: "https://lunavia.ardasnturk.com",
   },
@@ -66,7 +67,7 @@ const projects: Project[] = [
     status: "live",
     technologies: ["React Native", "TypeScript", "Expo", "Firebase"],
     icon: howWellIcon,
-    screenshot: howWellScreenshot,
+    banner: howWellBanner,
     appStoreUrl: "https://apps.apple.com/app/id6747012384",
   },
   {
@@ -74,7 +75,7 @@ const projects: Project[] = [
     status: "comingSoon",
     technologies: ["Swift", "SwiftUI", "Supabase", "Live Activities", "AI"],
     icon: kickoffIcon,
-    screenshot: kickoffScreenshot,
+    banner: kickoffBanner,
     websiteUrl: "https://kickoff.ardasnturk.com",
   },
   {
@@ -82,7 +83,7 @@ const projects: Project[] = [
     status: "comingSoon",
     technologies: ["Swift", "SwiftUI", "HealthKit", "CloudKit", "WidgetKit"],
     icon: atlevaIcon,
-    screenshot: atlevaScreenshot,
+    banner: atlevaBanner,
     websiteUrl: "https://atleva.ardasnturk.com",
   },
   {
@@ -90,8 +91,7 @@ const projects: Project[] = [
     status: "openSource",
     technologies: ["TypeScript", "Claude Code", "Playwright", "Remotion", "fastlane"],
     icon: vitrinIcon,
-    screenshot: vitrinScreenshot,
-    wideScreenshot: true,
+    banner: vitrinBanner,
     githubUrl: "https://github.com/ardasnturk/vitrin",
     websiteUrl: "https://vitrin.ardasnturk.com",
   },
@@ -100,7 +100,7 @@ const projects: Project[] = [
     status: "openSource",
     technologies: ["Swift", "SwiftUI", "macOS", "iOS", "E2E Encryption"],
     icon: remoteCodeIcon,
-    screenshot: remoteCodeScreenshot,
+    banner: remoteCodeBanner,
     githubUrl: "https://github.com/ardasnturk/remote-code",
     websiteUrl: "https://rcode.ardasnturk.com",
     testFlightUrl: "https://testflight.apple.com/join/6CE4VRRE",
@@ -109,12 +109,14 @@ const projects: Project[] = [
     id: "a11y",
     status: "openSource",
     technologies: ["TypeScript", "Appium", "Next.js", "React Native", "WCAG"],
+    banner: a11yBanner,
     githubUrl: "https://github.com/ardasnturk/react-native-accessibility-automation",
   },
   {
     id: "pinGenerator",
     status: "openSource",
     technologies: ["TypeScript", "Node.js", "SVG"],
+    banner: pinGeneratorBanner,
     githubUrl: "https://github.com/ardasnturk/pin-generator",
   },
 ];
@@ -193,22 +195,14 @@ const Projects = () => {
                       key={project.id}
                       className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 overflow-hidden flex flex-col"
                     >
-                      {/* Project Screenshot */}
-                      {project.screenshot && (
-                        <div
-                          className={`h-64 bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center ${
-                            project.wideScreenshot ? "" : "p-4"
-                          }`}
-                        >
+                      {/* Project Banner */}
+                      {project.banner && (
+                        <div className="aspect-[40/21] bg-gray-100">
                           <img
-                            src={project.screenshot}
-                            alt={`${title} screenshot`}
+                            src={project.banner}
+                            alt={`${title} banner`}
                             loading="lazy"
-                            className={
-                              project.wideScreenshot
-                                ? "w-full h-auto max-h-full object-contain"
-                                : "h-full w-auto max-w-full object-contain rounded-lg shadow-md"
-                            }
+                            className="w-full h-full object-cover"
                           />
                         </div>
                       )}

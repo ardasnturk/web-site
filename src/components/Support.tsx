@@ -13,7 +13,7 @@ const Support = () => {
             free to reach out to us.
           </p>
           <a
-            href="mailto:ardasnturk@me.com"
+            href="mailto:hello@ardasnturk.com"
             className="inline-block px-8 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-medium rounded-lg hover:from-primary-700 hover:to-primary-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             Contact Support
