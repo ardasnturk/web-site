@@ -1,126 +1,140 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { AnimatePresence, motion, useScroll, useSpring } from "motion/react";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { CLAIM_URL } from "../data/projects";
 
-interface HeaderProps {
-  activeSection: string;
-}
+const sections = ["work", "updates", "about", "contact"];
 
-const Header = ({ activeSection }: HeaderProps) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Header = () => {
   const { t } = useTranslation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+  const { scrollYProgress } = useScroll();
+  const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
 
-  const navigation = [
-    { name: t("header.home"), href: "#home" },
-    { name: t("header.about"), href: "#about" },
-    { name: t("header.projects"), href: "#projects" },
-    { name: t("header.contact"), href: "#contact" },
-  ];
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveSection(entry.target.id);
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px" }
+    );
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsMenuOpen(false);
-  };
+    ["home", ...sections].forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
-      <nav className="max-w-6xl mx-auto px-6 lg:px-24 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="text-xl font-bold text-gray-900 hover:text-primary-600 transition-colors"
-            >
-              {t("header.portfolio")}
-            </button>
-          </div>
+    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4">
+      <motion.div
+        aria-hidden="true"
+        style={{ scaleX: progress }}
+        className="fixed inset-x-0 top-0 h-0.5 origin-left bg-ember rtl:origin-right"
+      />
+      <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-line bg-surface/80 py-1.5 pe-2 ps-5 backdrop-blur-xl">
+        <a
+          href="#home"
+          className="font-display text-lg font-bold tracking-tight"
+          dir="ltr"
+        >
+          Arda<span className="text-ember">.</span>
+        </a>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navigation.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => scrollToSection(item.href.replace("#", ""))}
-                className={`text-sm font-medium transition-colors duration-200 ${
-                  activeSection === item.href.replace("#", "")
-                    ? "text-primary-600"
-                    : "text-gray-700 hover:text-primary-600"
-                }`}
-              >
-                {item.name}
-              </button>
-            ))}
-            <LanguageSwitcher />
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+        <div className="hidden items-center gap-1 md:flex">
+          {sections.map((section) => (
+            <a
+              key={section}
+              href={`#${section}`}
+              className={`relative rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                activeSection === section
+                  ? "text-ink"
+                  : "text-muted hover:text-paper"
+              }`}
             >
-              <span className="sr-only">{t("common.openMenu")}</span>
-              {!isMenuOpen ? (
-                <svg
-                  className="block h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="block h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+              {activeSection === section && (
+                <motion.span
+                  layoutId="nav-pill"
+                  className="absolute inset-0 rounded-full bg-paper"
+                  transition={{ type: "spring", stiffness: 400, damping: 34 }}
+                />
               )}
-            </button>
-          </div>
+              <span className="relative">{t(`nav.${section}`)}</span>
+            </a>
+          ))}
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-100 mt-4">
-              {navigation.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href.replace("#", ""))}
-                  className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
-                    activeSection === item.href.replace("#", "")
-                      ? "text-primary-600 bg-primary-50"
-                      : "text-gray-700 hover:text-primary-600 hover:bg-gray-50"
-                  }`}
-                >
-                  {item.name}
-                </button>
-              ))}
-              <div className="px-3 py-2 border-t border-gray-100 mt-2 pt-2">
-                <LanguageSwitcher />
-              </div>
-            </div>
-          </div>
-        )}
+        <div className="flex items-center gap-1">
+          <LanguageSwitcher />
+          <a
+            href={CLAIM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden rounded-full bg-ember px-4 py-2 text-sm font-semibold text-ink transition-transform hover:scale-105 sm:block"
+          >
+            {t("nav.promo")}
+          </a>
+          <button
+            type="button"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-expanded={isMenuOpen}
+            aria-label={t("nav.menu")}
+            className="rounded-full p-2 text-paper md:hidden"
+          >
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              {isMenuOpen ? (
+                <path d="M6 6l12 12M18 6L6 18" />
+              ) : (
+                <path d="M4 8h16M4 16h16" />
+              )}
+            </svg>
+          </button>
+        </div>
       </nav>
+
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="mx-auto mt-2 max-w-6xl rounded-3xl border border-line bg-surface p-3 md:hidden"
+          >
+            {sections.map((section) => (
+              <a
+                key={section}
+                href={`#${section}`}
+                onClick={() => setIsMenuOpen(false)}
+                className="block rounded-2xl px-4 py-3 font-display text-2xl font-semibold hover:bg-line"
+              >
+                {t(`nav.${section}`)}
+              </a>
+            ))}
+            <a
+              href={CLAIM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 block rounded-2xl bg-ember px-4 py-3 text-center font-semibold text-ink"
+            >
+              {t("nav.promo")}
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };

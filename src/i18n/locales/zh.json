@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "Arda Sentürk – iOS 应用与开源工具",
+    "description": "Arda Sentürk 是一名独立开发者，专注打造注重隐私的原生 iOS 应用，如 Weightly、Finly、Lunavia 和 Atleva，也为开发者开发开源工具。"
+  },
+  "nav": {
+    "work": "作品",
+    "updates": "动态",
+    "about": "关于",
+    "contact": "联系",
+    "promo": "促销码",
+    "menu": "打开菜单",
+    "language": "切换语言"
+  },
+  "hero": {
+    "shipped": "刚刚发布：{{name}}",
+    "tagline": "我做注重隐私的原生 iOS 应用，也为开发者打造开源工具。",
+    "ctaWork": "查看作品",
+    "ctaContact": "联系我",
+    "stats": {
+      "apps": "App Store 上的应用",
+      "soon": "即将推出的应用",
+      "openSource": "开源项目",
+      "years": "年软件开发经验"
+    }
+  },
+  "projects": {
+    "title": "我做过的东西",
+    "subtitle": "已在 App Store 上架的应用、即将上架的应用，以及你可以阅读、使用和修改的开源工具。",
+    "filters": {
+      "all": "全部",
+      "live": "App Store",
+      "comingSoon": "即将推出",
+      "openSource": "开源"
+    },
+    "status": {
+      "live": "已上架 App Store",
+      "comingSoon": "即将推出",
+      "openSource": "开源"
+    },
+    "links": {
+      "appStore": "App Store",
+      "github": "GitHub",
+      "website": "网站",
+      "download": "下载"
+    },
+    "allRepos": "查看 GitHub 上所有公开仓库",
+    "items": {
+      "atleva": {
+        "description": "无需器械的居家锻炼。选好目标，在人体图上点选想重点锻炼的部位，就能得到会根据你的状态调整的计划。119 个动作视频支持离线观看。",
+        "update": "现已登陆 App Store，支持 11 种语言。"
+      },
+      "weightly": {
+        "description": "带智能趋势线的体重记录应用，能抹平每天的小幅波动。无需账号，没有广告，数据只保存在你的设备上。",
+        "update": "Weightly PRO 的购买和恢复更加稳定。"
+      },
+      "finly": {
+        "description": "适用于 iPhone 和 Apple Watch 的预算与开支记录应用。输入“咖啡 30”就记好了。无需账号，无需登录银行。",
+        "update": "自动捕获的付款，可以直接在通知里确认或删除。"
+      },
+      "lunavia": {
+        "description": "注重隐私的经期与周期记录应用，提供预测、快速记录和有出处的健康文章。所有数据都只保存在你的 iPhone 上。",
+        "update": "购买和恢复更加稳定，周期数据依然只保存在你的 iPhone 上。"
+      },
+      "howWell": {
+        "description": "适合和朋友一起玩的趣味问答游戏。来测测你们有多了解彼此吧。"
+      },
+      "kickoff": {
+        "description": "免费查看数千项赛事的足球实时比分、阵容、数据和提醒。Kickoff Pro 还为每场比赛提供 AI 预测。"
+      },
+      "elemix": {
+        "description": "一款适合 iPhone 的轻松元素解谜游戏。组合材料、拨动时钟、调节温度，在无尽的关卡中达成目标。"
+      },
+      "vitrin": {
+        "description": "读取你的应用代码，生成商店元数据、截图和 App Preview，再用一个 Mac 应用管理你的整个 App Store Connect。由 Claude Code 驱动。",
+        "update": "元数据现在贴合 App Store 搜索的真实机制，还新增了关键词检查。"
+      },
+      "remoteCode": {
+        "description": "在 iPhone 或 iPad 上操控 Mac 里的 Claude Code、Codex 和 Gemini CLI。端到端加密，无需服务器，无需账号。",
+        "update": "新增 App Review 通知：应用进入审核、通过或被拒时，Mac 和手机都会第一时间提醒你。"
+      },
+      "promoStudio": {
+        "description": "一款 Mac 应用，把你的应用源代码变成竖屏短视频，由 Claude Code 撰写并执导，再发布到 Instagram。",
+        "update": "第一个密钥额度用完后，第二个 Gemini 密钥会让配音继续。"
+      },
+      "promoTemplates": {
+        "description": "用代码生成的竖屏视频：基于 Remotion 的物理循环、解谜和聊天故事，另附可制作新视频的 Claude Code 技能。",
+        "update": "新增“Satisfying”模板：重量一直增加会怎样？"
+      },
+      "polylocal": {
+        "description": "macOS 上的本地 AI 翻译工具。在任何应用里按 ⌘C C 即可翻译和改写文字，还能跟上其他语言的会议。数据不会离开你的 Mac。",
+        "update": "开口说话，翻译就会自动开始，界面还支持 20 种语言。"
+      },
+      "kadraj": {
+        "description": "一款快速的 macOS 原生截图工具：截图、标注、OCR 和贴图。"
+      },
+      "videoCompressor": {
+        "description": "一款能压缩视频的 macOS 原生菜单栏应用。把视频拖进来，就能得到体积更小的副本，并内置适用于 Discord、WhatsApp 和邮件的预设。",
+        "update": "现已支持 7 种语言。"
+      },
+      "a11y": {
+        "description": "面向 Expo 和 React Native 应用的自托管无障碍爬虫。用 Appium 遍历界面，按 WCAG 2.2 进行检测，并在本地仪表盘中生成报告。"
+      },
+      "pinGenerator": {
+        "description": "一个小巧的 TypeScript 工具，可将 SVG 图标转换成任意尺寸的地图图钉 PNG，并把标记列表写入 mapSettings.json。"
+      }
+    }
+  },
+  "updates": {
+    "title": "最新动态",
+    "subtitle": "我最近发布的内容，按时间从新到旧排列。"
+  },
+  "claim": {
+    "eyebrow": "福利赠送",
+    "title": "免费升级我的应用",
+    "text": "选一款正在赠送的应用，领取你的促销码。每人限领一个，先到先得，送完即止。",
+    "button": "领取促销码"
+  },
+  "about": {
+    "title": "关于我",
+    "p1": "我从事软件开发已有大约 15 年，有多款应用已在 App Store 上架。我在一家公司担任 React-Native 开发工程师超过 3 年，在各种不同的项目中积累了经验。",
+    "p2": "这些年我参与过许多项目，也做过各类培训，使用过 React-Native、NestJS、Node.js、Unity 和 Swift。最近，我用 SwiftUI 把自己的应用重写为原生版本，并支持 Apple Watch 应用、小组件、健康和 Siri。",
+    "p3": "我也为 Mac 和 Claude Code 这类 AI 编程助手开发开源工具，从自动化 App Store 页面，到宣传视频和本地翻译都有涉及。学习新技术是我前进的动力。",
+    "skills": "技能与技术"
+  },
+  "contact": {
+    "title": "一起做点什么吧",
+    "subtitle": "我始终乐于接触新的机会与合作。欢迎给我写信。",
+    "copy": "复制地址",
+    "copied": "已复制",
+    "location": "德国慕尼黑"
+  },
+  "support": {
+    "title": "支持",
+    "text": "如果你有任何问题、反馈，或需要应用方面的帮助，欢迎随时联系我。",
+    "button": "联系支持"
+  }
+}

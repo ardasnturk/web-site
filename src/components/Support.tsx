@@ -1,29 +1,27 @@
-// No import needed for React 19 with new JSX transform
+import { useTranslation } from "react-i18next";
+import { EMAIL } from "../data/projects";
 
 const Support = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 via-white to-primary-50 flex items-center justify-center">
-      <div className="container max-w-lg mx-auto px-6 py-16">
-        <div className="bg-white rounded-xl shadow-lg p-8 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-6 bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent">
-            Support
-          </h1>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-md mx-auto">
-            If you have any questions, feedback, or need help with the App, feel
-            free to reach out to us.
-          </p>
-          <a
-            href="mailto:hello@ardasnturk.com"
-            className="inline-block px-8 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-medium rounded-lg hover:from-primary-700 hover:to-primary-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-          >
-            Contact Support
-          </a>
-          <div className="mt-12 pt-8 border-t border-gray-200">
-            <p className="text-sm text-gray-500">
-              &copy; 2025 Arda Sentürk | All rights reserved.
-            </p>
-          </div>
-        </div>
+    <div className="flex min-h-screen items-center justify-center bg-ink px-4 text-paper">
+      <div className="w-full max-w-lg rounded-3xl border border-line bg-surface p-10 text-center">
+        <h1 className="font-display text-5xl font-bold tracking-tight">
+          {t("support.title")}
+        </h1>
+        <p className="mt-5 text-lg leading-relaxed text-muted">
+          {t("support.text")}
+        </p>
+        <a
+          href={`mailto:${EMAIL}`}
+          className="mt-8 inline-block rounded-full bg-ember px-7 py-3.5 font-semibold text-ink transition-transform hover:scale-105"
+        >
+          {t("support.button")}
+        </a>
+        <p className="mt-10 border-t border-line pt-6 text-sm text-muted">
+          © {new Date().getFullYear()} Arda Sentürk
+        </p>
       </div>
     </div>
   );

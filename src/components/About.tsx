@@ -1,100 +1,94 @@
-// No import needed for React 19 with new JSX transform
+import { useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { motion, useScroll, useTransform } from "motion/react";
 import profileImage from "../assets/Profil.jpeg";
+import Reveal from "./Reveal";
+
+const skills = [
+  "Swift",
+  "SwiftUI",
+  "SwiftData",
+  "HealthKit",
+  "WidgetKit",
+  "watchOS",
+  "macOS",
+  "React Native",
+  "Expo",
+  "TypeScript",
+  "JavaScript",
+  "React",
+  "Next.js",
+  "NestJS",
+  "Node.js",
+  "Supabase",
+  "PostgreSQL",
+  "MongoDB",
+  "Tailwind CSS",
+  "Unity",
+  "Python",
+  "AI/ML",
+  "Claude Code",
+  "Remotion",
+  "Git",
+];
 
 const About = () => {
   const { t } = useTranslation();
-  const skills = [
-    "Swift",
-    "SwiftUI",
-    "React-Native",
-    "JavaScript",
-    "TypeScript",
-    "NestJS",
-    "Node.js",
-    "SwiftData",
-    "HealthKit",
-    "WidgetKit",
-    "watchOS",
-    "Supabase",
-    "Unity",
-    "Python",
-    "AI/ML",
-    "Claude Code",
-    "React",
-    "Next.js",
-    "Tailwind CSS",
-    "MongoDB",
-    "PostgreSQL",
-    "Git",
-  ];
+  const photo = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: photo,
+    offset: ["start end", "end start"],
+  });
+  const imageY = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
 
   return (
-    <section id="about" className="px-6 lg:px-24 py-16 bg-gray-50">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Profile Image */}
-          <div className="order-2 lg:order-1">
-            <div className="relative">
-              <div className="w-full max-w-md mx-auto aspect-square rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src={profileImage}
-                  alt="Arda Senturk"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary-200 rounded-full opacity-20"></div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary-300 rounded-full opacity-20"></div>
-            </div>
+    <section id="about" className="overflow-hidden border-t border-line py-24 md:py-32">
+      <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 lg:grid-cols-[1fr_1.2fr] lg:gap-20">
+        <Reveal>
+          <div
+            ref={photo}
+            className="relative mx-auto aspect-[4/5] max-w-sm overflow-hidden rounded-[2rem]"
+          >
+            <motion.img
+              src={profileImage}
+              alt="Arda Sentürk"
+              loading="lazy"
+              style={{ y: imageY, scale: 1.2 }}
+              className="h-full w-full object-cover"
+            />
           </div>
+        </Reveal>
 
-          {/* Content */}
-          <div className="order-1 lg:order-2">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        <div>
+          <Reveal>
+            <h2 className="font-display text-5xl font-bold tracking-tight md:text-7xl">
               {t("about.title")}
             </h2>
-            <div className="space-y-4 text-gray-600 text-lg leading-relaxed mb-8">
-              <p>{t("about.description1")}</p>
-              <p>{t("about.description2")}</p>
-              <p>{t("about.description3")}</p>
-            </div>
-
-            {/* Skills */}
-            <div className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                {t("about.skillsTitle")}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Download Resume Button */}
-            {/* <button className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors duration-200 shadow-lg hover:shadow-xl">
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                />
-              </svg>
-              Download Resume
-            </button> */}
+          </Reveal>
+          <div className="mt-7 space-y-4 text-lg leading-relaxed text-muted">
+            {["p1", "p2", "p3"].map((key, index) => (
+              <Reveal key={key} delay={0.05 * index}>
+                <p>{t(`about.${key}`)}</p>
+              </Reveal>
+            ))}
           </div>
+        </div>
+      </div>
+
+      <div className="mt-16 md:mt-20" dir="ltr">
+        <h3 className="sr-only">{t("about.skills")}</h3>
+        <div className="[mask-image:linear-gradient(90deg,transparent,black_12%,black_88%,transparent)]">
+          <ul className="marquee gap-3">
+            {[...skills, ...skills].map((skill, index) => (
+              <li
+                key={index}
+                aria-hidden={index >= skills.length}
+                className="whitespace-nowrap rounded-full border border-line px-5 py-2.5 font-display text-lg font-semibold text-paper/80"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

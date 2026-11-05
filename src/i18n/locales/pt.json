@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "Arda Sentürk – apps iOS e ferramentas de código aberto",
+    "description": "Arda Sentürk é um desenvolvedor independente que cria apps iOS nativos e privados como Weightly, Finly, Lunavia e Atleva, além de ferramentas de código aberto para desenvolvedores."
+  },
+  "nav": {
+    "work": "Projetos",
+    "updates": "Novidades",
+    "about": "Sobre mim",
+    "contact": "Contato",
+    "promo": "Códigos promo",
+    "menu": "Abrir menu",
+    "language": "Mudar idioma"
+  },
+  "hero": {
+    "shipped": "Acabou de sair: {{name}}",
+    "tagline": "Eu crio apps iOS nativos e privados e ferramentas de código aberto para desenvolvedores.",
+    "ctaWork": "Ver meus projetos",
+    "ctaContact": "Fale comigo",
+    "stats": {
+      "apps": "apps na App Store",
+      "soon": "apps em breve",
+      "openSource": "projetos de código aberto",
+      "years": "anos desenvolvendo software"
+    }
+  },
+  "projects": {
+    "title": "O que eu criei",
+    "subtitle": "Apps já na App Store, apps a caminho e ferramentas de código aberto que você pode ler, usar e modificar.",
+    "filters": {
+      "all": "Todos",
+      "live": "App Store",
+      "comingSoon": "Em breve",
+      "openSource": "Código aberto"
+    },
+    "status": {
+      "live": "Na App Store",
+      "comingSoon": "Em breve",
+      "openSource": "Código aberto"
+    },
+    "links": {
+      "appStore": "App Store",
+      "github": "GitHub",
+      "website": "Site",
+      "download": "Baixar"
+    },
+    "allRepos": "Ver todos os repositórios públicos no GitHub",
+    "items": {
+      "atleva": {
+        "description": "Treinos em casa sem equipamento. Escolha um objetivo, toque nas áreas de foco no mapa do corpo e receba um plano que se adapta a como você se sente, com 119 vídeos de exercícios que funcionam offline.",
+        "update": "Agora na App Store, em 11 idiomas."
+      },
+      "weightly": {
+        "description": "Registro de peso com uma linha de tendência inteligente que suaviza as oscilações diárias. Sem conta, sem anúncios, e seus dados ficam nos seus dispositivos.",
+        "update": "Compras e restaurações do Weightly PRO mais confiáveis."
+      },
+      "finly": {
+        "description": "Controle de orçamento e gastos para iPhone e Apple Watch. Digite “café 4,50” e pronto. Sem conta, sem login no banco.",
+        "update": "Aprove ou exclua pagamentos capturados automaticamente direto da notificação."
+      },
+      "lunavia": {
+        "description": "Acompanhamento privado de menstruação e ciclo, com previsões, registro rápido e artigos de saúde com fontes. Tudo fica no seu iPhone.",
+        "update": "Compras e restaurações mais confiáveis, e os dados do seu ciclo continuam no seu iPhone."
+      },
+      "howWell": {
+        "description": "Um jogo divertido de perguntas e respostas para amigos. Descubra o quanto vocês se conhecem."
+      },
+      "kickoff": {
+        "description": "Placares ao vivo, escalações, estatísticas e alertas de futebol de milhares de competições, grátis. O Kickoff Pro adiciona previsões com IA para cada jogo."
+      },
+      "elemix": {
+        "description": "Um jogo de quebra-cabeça de elementos, tranquilo, para iPhone. Combine materiais, arraste o relógio e ajuste a temperatura para atingir a meta em níveis infinitos."
+      },
+      "vitrin": {
+        "description": "Lê o código do seu app e cria os metadados da loja, as capturas de tela e os App Previews, depois gerencia todo o seu App Store Connect a partir de um único app para Mac. Movido a Claude Code.",
+        "update": "Os metadados agora seguem como a busca da App Store realmente funciona, com novas verificações de palavras-chave."
+      },
+      "remoteCode": {
+        "description": "Controle o Claude Code, o Codex e o Gemini CLI no seu Mac pelo iPhone ou iPad. Criptografia de ponta a ponta, sem servidor, sem conta.",
+        "update": "Notificações do App Review: saiba no Mac e no celular quando um app estiver em análise, aprovado ou rejeitado."
+      },
+      "promoStudio": {
+        "description": "Um app para Mac que transforma o código-fonte do seu app em vídeos verticais curtos, escritos e dirigidos pelo Claude Code, e os publica no Instagram.",
+        "update": "Uma segunda chave do Gemini mantém a narração funcionando quando a primeira esgota a cota."
+      },
+      "promoTemplates": {
+        "description": "Vídeos verticais gerados por código: loops de física, quebra-cabeças e histórias de chat no Remotion, além das skills do Claude Code que criam novos.",
+        "update": "Novo template “Satisfying”: o que acontece quando o peso não para de subir?"
+      },
+      "polylocal": {
+        "description": "Tradutor com IA no próprio dispositivo para macOS. Traduza e reescreva textos em qualquer app com ⌘C C e acompanhe reuniões em outro idioma. Nada sai do seu Mac.",
+        "update": "Fale e a tradução começa sozinha, além de 20 idiomas de interface."
+      },
+      "kadraj": {
+        "description": "Uma ferramenta de captura de tela rápida e nativa para macOS: capture, anote, use OCR e fixe."
+      },
+      "videoCompressor": {
+        "description": "Um app nativo da barra de menus do macOS que reduz vídeos. Arraste um, receba uma cópia menor, com predefinições para Discord, WhatsApp e e-mail.",
+        "update": "Agora disponível em 7 idiomas."
+      },
+      "a11y": {
+        "description": "Rastreador de acessibilidade auto-hospedado para apps Expo e React Native. Explora telas com o Appium, avalia conforme as WCAG 2.2 e reporta em um painel local."
+      },
+      "pinGenerator": {
+        "description": "Uma pequena ferramenta em TypeScript que transforma ícones SVG em PNGs de pins de mapa de qualquer tamanho e grava a lista de marcadores em mapSettings.json."
+      }
+    }
+  },
+  "updates": {
+    "title": "Últimas novidades",
+    "subtitle": "O que lancei recentemente, da mais nova para a mais antiga."
+  },
+  "claim": {
+    "eyebrow": "Brindes",
+    "title": "Upgrades grátis para os meus apps",
+    "text": "Escolha um app com brinde disponível e resgate seu código promo. Um por pessoa, enquanto durarem.",
+    "button": "Pegar um código promo"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "p1": "Trabalho com desenvolvimento de software há cerca de 15 anos e tenho vários apps na App Store. Há mais de 3 anos atuo como desenvolvedor React-Native em uma empresa, ganhando experiência em muitos projetos diferentes.",
+    "p2": "Ao longo da carreira participei de muitos projetos e dei diversos treinamentos, trabalhando com React-Native, NestJS, Node.js, Unity e Swift. Recentemente reconstruí meus próprios apps de forma nativa em SwiftUI, com apps para Apple Watch, widgets e suporte ao app Saúde e à Siri.",
+    "p3": "Também crio ferramentas de código aberto para Mac e para agentes de programação com IA como o Claude Code, da automação de páginas da App Store a vídeos promocionais e tradução no dispositivo. Aprender novas tecnologias é o que me move.",
+    "skills": "Habilidades e tecnologias"
+  },
+  "contact": {
+    "title": "Vamos construir algo",
+    "subtitle": "Estou sempre aberto a novas oportunidades e colaborações. Escreva para mim.",
+    "copy": "Copiar endereço",
+    "copied": "Copiado",
+    "location": "Munique, Alemanha"
+  },
+  "support": {
+    "title": "Suporte",
+    "text": "Se você tiver dúvidas, feedback ou precisar de ajuda com um app, fique à vontade para entrar em contato.",
+    "button": "Falar com o suporte"
+  }
+}

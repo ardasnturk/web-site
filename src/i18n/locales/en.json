@@ -1,117 +1,138 @@
 {
-  "header": {
-    "home": "Home",
+  "meta": {
+    "title": "Arda Sentürk – iOS apps and open-source tools",
+    "description": "Arda Sentürk is an independent developer building private, native iOS apps like Weightly, Finly, Lunavia and Atleva, and open-source tools for developers."
+  },
+  "nav": {
+    "work": "Work",
+    "updates": "Updates",
     "about": "About",
-    "projects": "Projects",
     "contact": "Contact",
-    "portfolio": "Portfolio"
+    "promo": "Promo codes",
+    "menu": "Open menu",
+    "language": "Change language"
   },
-  "home": {
-    "title": "Arda Senturk",
-    "subtitle": "iOS & React-Native Developer",
-    "description": "I build private, fast and beautiful apps for iPhone, iPad and Apple Watch — natively with SwiftUI and cross-platform with React-Native — plus open-source tools that make shipping apps easier.",
-    "viewWork": "View My Work",
-    "getInTouch": "Get In Touch"
-  },
-  "about": {
-    "title": "About Me",
-    "description1": "I have been involved in software development for approximately 15 years, and currently have multiple applications live on both the App Store and Play Store. I have been working as a React-Native Developer at a company for over 3 years, expanding my experience through various projects during this time.",
-    "description2": "Throughout my career, I have participated in different projects and provided various training sessions. I have developed many projects with React-Native, NestJS, NodeJS, Unity and Swift. Recently I rebuilt my own apps natively in SwiftUI, with Apple Watch apps, widgets, Apple Health and Siri support.",
-    "description3": "I also build open-source developer tools around AI coding agents such as Claude Code — from automating App Store listings to driving coding agents on my Mac from my iPhone. My passion for continuous learning keeps me current and helps me deliver the best solutions in my projects.",
-    "skillsTitle": "Skills & Technologies",
-    "downloadResume": "Download Resume"
-  },
-  "contact": {
-    "title": "Get In Touch",
-    "subtitle": "I'm always interested in new opportunities and collaborations. Let's connect and discuss how we can work together!",
-    "sendMessage": "Send Me a Message",
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
-    "sendButton": "Send Message",
-    "letsConnect": "Let's Connect",
-    "namePlaceholder": "Arda Senturk",
-    "emailPlaceholder": "name@example.com",
-    "messagePlaceholder": "Your message here..."
+  "hero": {
+    "shipped": "Just shipped: {{name}}",
+    "tagline": "I build private, native iOS apps and open-source tools for developers.",
+    "ctaWork": "See my work",
+    "ctaContact": "Get in touch",
+    "stats": {
+      "apps": "apps on the App Store",
+      "soon": "apps coming soon",
+      "openSource": "open-source projects",
+      "years": "years of building software"
+    }
   },
   "projects": {
-    "title": "My Projects",
-    "subtitle": "Apps live on the App Store, apps launching soon, and open-source tools I share on GitHub.",
-    "github": "GitHub",
-    "website": "Website",
-    "appStore": "App Store",
-    "testFlight": "TestFlight",
-    "latestUpdate": "Latest update",
-    "allRepos": "All public repositories on GitHub",
-    "status": {
-      "live": "Live on the App Store",
+    "title": "Things I've built",
+    "subtitle": "Apps live on the App Store, apps on their way there, and open-source tools you can read, use and change.",
+    "filters": {
+      "all": "All",
+      "live": "App Store",
       "comingSoon": "Coming soon",
       "openSource": "Open source"
     },
-    "groups": {
-      "live": {
-        "title": "Live on the App Store",
-        "subtitle": "Apps you can download today."
-      },
-      "comingSoon": {
-        "title": "Coming Soon",
-        "subtitle": "Finished apps on their way to the App Store. Their websites are already live."
-      },
-      "openSource": {
-        "title": "Open Source",
-        "subtitle": "Tools and apps whose code is public on GitHub, MIT licensed."
-      }
+    "status": {
+      "live": "On the App Store",
+      "comingSoon": "Coming soon",
+      "openSource": "Open source"
     },
+    "links": {
+      "appStore": "App Store",
+      "github": "GitHub",
+      "website": "Website",
+      "download": "Download"
+    },
+    "allRepos": "See all public repositories on GitHub",
     "items": {
+      "atleva": {
+        "description": "No-equipment home workouts. Pick a goal, tap your focus areas on the body map and get a plan that adapts to how you feel, with 119 exercise videos that work offline.",
+        "update": "Now on the App Store, in 11 languages."
+      },
       "weightly": {
-        "title": "Weightly",
-        "description": "Weight tracker with a smart trend line that smooths out daily swings, so you always see where you're really heading. No account, no ads, your data stays on your devices.",
-        "update": "Version 2.0 is a complete native SwiftUI rebuild: weekly rate and goal date range, two-way Apple Health sync, interactive widgets, Apple Watch and Siri."
+        "description": "Weight tracker with a smart trend line that smooths out daily swings. No account, no ads, and your data stays on your devices.",
+        "update": "More reliable Weightly PRO purchases and restores."
       },
       "finly": {
-        "title": "Finly",
-        "description": "Budget and expense log for iPhone and Apple Watch. Type “coffee 4.50” and you're done — Finly picks the category, keeps you on budget and reminds you of subscriptions. No account, no bank login.",
-        "update": "Finly 2 is rebuilt natively for iOS; version 2.0.1 adds iPhone Duo layouts and improved landscape and larger-text support."
+        "description": "Budget and expense log for iPhone and Apple Watch. Type “coffee 4.50” and you're done. No account, no bank login.",
+        "update": "Approve or delete automatically captured payments right from the notification."
       },
       "lunavia": {
-        "title": "Lunavia",
-        "description": "Private period and cycle tracker. Predictions for your next period and fertile window, symptom logging in seconds and sourced health articles — everything stays on your iPhone.",
-        "update": "Launched on the App Store in October 2026, in 14 languages."
+        "description": "Private period and cycle tracker with predictions, quick logging and sourced health articles. Everything stays on your iPhone.",
+        "update": "More reliable purchases and restores, while your cycle data still stays on your iPhone."
       },
       "howWell": {
-        "title": "How Well?",
-        "description": "Fun question-and-answer game that can be played among friends. Test how well you know each other and have a good time."
+        "description": "A fun question-and-answer game for friends. Test how well you know each other."
       },
       "kickoff": {
-        "title": "Kickoff",
-        "description": "Football live scores, lineups, stats and alerts from thousands of competitions, free. Kickoff Pro adds AI forecasts for every match and lets you manage the team yourself.",
-        "update": "Live Activities, universal links for shared matches and a website in 14 languages."
+        "description": "Football live scores, lineups, stats and alerts from thousands of competitions, free. Kickoff Pro adds AI forecasts for every match."
       },
-      "atleva": {
-        "title": "Atleva",
-        "description": "No-equipment home workouts. Pick a goal, tap your focus areas on the body map and get a plan that adapts to how you feel, with 119 exercise videos that work offline."
+      "elemix": {
+        "description": "A calm element puzzle game for iPhone. Combine materials, drag the clock and set the temperature to reach the target in endless levels."
       },
       "vitrin": {
-        "title": "Vitrin",
-        "description": "Builds your whole store listing from your app's code: ASO metadata, screenshots, creatives and App Preview videos, validated against Apple's and Google's rules and uploaded only after your approval. Runs inside Claude Code.",
-        "update": "Version 1.0.0 released in October 2026, with Vitrin Studio, a local web UI for the whole flow."
+        "description": "Reads your app's code and makes the store metadata, screenshots and App Previews, then runs your whole App Store Connect from one Mac app. Driven by Claude Code.",
+        "update": "Metadata now follows how App Store search really works, with new keyword checks."
       },
       "remoteCode": {
-        "title": "Remote Code",
-        "description": "Drive Claude Code, Codex and Gemini CLI on your Mac from your iPhone or iPad. Follow responses, diffs and terminal output live and approve every action — end-to-end encrypted, no server, no account.",
-        "update": "Version 1.2.0: Mac app via DMG or Homebrew, iPhone app on TestFlight."
+        "description": "Drive Claude Code, Codex and Gemini CLI on your Mac from your iPhone or iPad. End-to-end encrypted, no server, no account.",
+        "update": "App Review notifications: hear on your Mac and phone when an app is in review, approved or rejected."
+      },
+      "promoStudio": {
+        "description": "A Mac app that turns your app's source code into short vertical videos, written and directed by Claude Code, and posts them to Instagram.",
+        "update": "A second Gemini key keeps the voiceover going when the first runs out of quota."
+      },
+      "promoTemplates": {
+        "description": "Vertical videos generated from code: physics loops, puzzles and chat stories in Remotion, plus the Claude Code skills that make new ones.",
+        "update": "New “Satisfying” template: what happens when the weight keeps going up?"
+      },
+      "polylocal": {
+        "description": "On-device AI translator for macOS. Translate and rewrite text in any app with ⌘C C, and follow meetings in another language. Nothing leaves your Mac.",
+        "update": "Speak and the translation starts by itself, plus 20 interface languages."
+      },
+      "kadraj": {
+        "description": "A fast, native screenshot tool for macOS: capture, annotate, OCR and pin."
+      },
+      "videoCompressor": {
+        "description": "A native macOS menu bar app that shrinks videos. Drag one in, get a smaller copy back, with presets for Discord, WhatsApp and e-mail.",
+        "update": "Now available in 7 languages."
       },
       "a11y": {
-        "title": "RN Accessibility Automation",
-        "description": "Self-hosted accessibility crawler for Expo and React Native apps. Explores screens with Appium, audits elements against WCAG 2.2 and shows the results in a local dashboard."
+        "description": "Self-hosted accessibility crawler for Expo and React Native apps. Explores screens with Appium, audits them against WCAG 2.2 and reports in a local dashboard."
       },
       "pinGenerator": {
-        "title": "Map Pin Generator",
-        "description": "Small TypeScript tool that turns SVG icons into map pin PNGs in any size and writes the marker list to mapSettings.json."
+        "description": "A small TypeScript tool that turns SVG icons into map pin PNGs in any size and writes the marker list to mapSettings.json."
       }
     }
   },
-  "common": {
-    "openMenu": "Open main menu"
+  "updates": {
+    "title": "Latest updates",
+    "subtitle": "What I've shipped recently, newest first."
+  },
+  "claim": {
+    "eyebrow": "Giveaways",
+    "title": "Free upgrades for my apps",
+    "text": "Pick an app with an open giveaway and claim your promo code. One per person, while they last.",
+    "button": "Get a promo code"
+  },
+  "about": {
+    "title": "About me",
+    "p1": "I have been involved in software development for about 15 years and have several apps live on the App Store. I have been working as a React-Native Developer at a company for over 3 years, gaining experience through many different projects.",
+    "p2": "Throughout my career I have taken part in many projects and given various training sessions, working with React-Native, NestJS, Node.js, Unity and Swift. Recently I rebuilt my own apps natively in SwiftUI, with Apple Watch apps, widgets, Apple Health and Siri support.",
+    "p3": "I also build open-source tools for Mac and for AI coding agents like Claude Code, from automating App Store listings to promo videos and on-device translation. Learning new technologies is what keeps me going.",
+    "skills": "Skills and technologies"
+  },
+  "contact": {
+    "title": "Let's build something",
+    "subtitle": "I'm always interested in new opportunities and collaborations. Write to me.",
+    "copy": "Copy address",
+    "copied": "Copied",
+    "location": "München, Germany"
+  },
+  "support": {
+    "title": "Support",
+    "text": "If you have any questions, feedback, or need help with an app, feel free to reach out.",
+    "button": "Contact support"
   }
 }

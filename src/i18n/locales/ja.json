@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "Arda Sentürk – iOSアプリとオープンソースツール",
+    "description": "Arda Sentürk は、Weightly、Finly、Lunavia、Atleva などプライバシーを大切にしたネイティブiOSアプリと、開発者向けのオープンソースツールを作る個人開発者です。"
+  },
+  "nav": {
+    "work": "作品",
+    "updates": "更新情報",
+    "about": "自己紹介",
+    "contact": "お問い合わせ",
+    "promo": "プロモコード",
+    "menu": "メニューを開く",
+    "language": "言語を変更"
+  },
+  "hero": {
+    "shipped": "リリースしました: {{name}}",
+    "tagline": "プライバシーを大切にしたネイティブiOSアプリと、開発者向けのオープンソースツールを作っています。",
+    "ctaWork": "作品を見る",
+    "ctaContact": "連絡する",
+    "stats": {
+      "apps": "App Store のアプリ",
+      "soon": "近日公開のアプリ",
+      "openSource": "オープンソースのプロジェクト",
+      "years": "年のソフトウェア開発経験"
+    }
+  },
+  "projects": {
+    "title": "作ったもの",
+    "subtitle": "App Store で公開中のアプリ、公開準備中のアプリ、そして自由に読んで使って変更できるオープンソースツールです。",
+    "filters": {
+      "all": "すべて",
+      "live": "App Store",
+      "comingSoon": "近日公開",
+      "openSource": "オープンソース"
+    },
+    "status": {
+      "live": "App Store で公開中",
+      "comingSoon": "近日公開",
+      "openSource": "オープンソース"
+    },
+    "links": {
+      "appStore": "App Store",
+      "github": "GitHub",
+      "website": "Webサイト",
+      "download": "ダウンロード"
+    },
+    "allRepos": "GitHub の公開リポジトリをすべて見る",
+    "items": {
+      "atleva": {
+        "description": "器具なしで楽しめる自宅トレーニング。目標を選び、ボディマップで鍛えたい部位をタップすると、体調に合わせて変わるプランが届きます。119本のエクササイズ動画はオフラインでも使えます。",
+        "update": "App Store で公開中です。11言語に対応しています。"
+      },
+      "weightly": {
+        "description": "日々の変動をならしてくれるスマートなトレンドラインつきの体重記録アプリ。アカウントも広告も不要で、データはお使いのデバイスにだけ保存されます。",
+        "update": "Weightly PRO の購入と復元がより確実になりました。"
+      },
+      "finly": {
+        "description": "iPhone と Apple Watch で使える家計簿・支出記録アプリ。「コーヒー 450」と入力するだけで記録完了。アカウントも銀行ログインも不要です。",
+        "update": "自動で取り込んだ支払いを、通知からそのまま承認または削除できます。"
+      },
+      "lunavia": {
+        "description": "予測、かんたん記録、出典つきの健康記事がそろった、プライベートな生理・周期トラッカー。すべてのデータは iPhone の中だけに保存されます。",
+        "update": "購入と復元がより確実になりました。周期のデータはこれまでどおり iPhone の中だけに保存されます。"
+      },
+      "howWell": {
+        "description": "友だち同士で遊べるクイズゲーム。お互いのことをどれだけ知っているか試してみましょう。"
+      },
+      "kickoff": {
+        "description": "数千の大会のサッカーのライブスコア、スタメン、スタッツ、通知を無料で。Kickoff Pro なら全試合のAI予想も見られます。"
+      },
+      "elemix": {
+        "description": "iPhone で遊べる、落ち着いたエレメントパズル。素材を組み合わせ、時計をドラッグし、温度を調整して、果てしなく続くステージでゴールを目指します。"
+      },
+      "vitrin": {
+        "description": "アプリのコードを読み取り、ストアのメタデータ、スクリーンショット、App Preview を作成。さらに App Store Connect の運用を1つの Mac アプリにまとめます。Claude Code で動きます。",
+        "update": "メタデータが App Store の検索の仕組みに沿った内容になり、新しいキーワードチェックも加わりました。"
+      },
+      "remoteCode": {
+        "description": "Mac の Claude Code、Codex、Gemini CLI を iPhone や iPad から操作できます。エンドツーエンド暗号化で、サーバーもアカウントも不要です。",
+        "update": "App Review の通知に対応。アプリが審査中になったとき、承認されたとき、却下されたときに、Mac と iPhone でお知らせします。"
+      },
+      "promoStudio": {
+        "description": "アプリのソースコードから、Claude Code が脚本と演出を手がける短い縦型動画を作り、Instagram に投稿する Mac アプリです。",
+        "update": "最初のキーが上限に達しても、2つ目の Gemini キーでナレーションを続けられます。"
+      },
+      "promoTemplates": {
+        "description": "コードから生成する縦型動画。Remotion で作る物理ループ、パズル、チャットストーリーに加え、新しいテンプレートを作る Claude Code のスキルも入っています。",
+        "update": "新テンプレート “Satisfying” が登場。重りが増え続けたら、どうなるでしょう?"
+      },
+      "polylocal": {
+        "description": "macOS 向けのオンデバイスAI翻訳アプリ。どのアプリでも ⌘C C で翻訳や書き換えができ、他の言語の会議にもついていけます。データが Mac の外に出ることはありません。",
+        "update": "話し始めると翻訳が自動でスタート。インターフェースは20言語に対応しました。"
+      },
+      "kadraj": {
+        "description": "macOS 向けの高速なネイティブスクリーンショットツール。キャプチャ、注釈、OCR、ピン留めに対応しています。"
+      },
+      "videoCompressor": {
+        "description": "動画を小さくする macOS のネイティブなメニューバーアプリ。ドラッグするだけで軽いコピーができ、Discord、WhatsApp、メール向けのプリセットも用意しています。",
+        "update": "7言語に対応しました。"
+      },
+      "a11y": {
+        "description": "Expo と React Native アプリ向けの、セルフホスト型アクセシビリティクローラー。Appium で画面を巡回し、WCAG 2.2 に照らして監査し、ローカルのダッシュボードにレポートします。"
+      },
+      "pinGenerator": {
+        "description": "SVG アイコンから好きなサイズの地図ピン PNG を作り、マーカー一覧を mapSettings.json に書き出す小さな TypeScript ツールです。"
+      }
+    }
+  },
+  "updates": {
+    "title": "最新の更新情報",
+    "subtitle": "最近リリースしたものを、新しい順に紹介します。"
+  },
+  "claim": {
+    "eyebrow": "プレゼント",
+    "title": "アプリを無料でアップグレード",
+    "text": "プレゼント実施中のアプリを選んで、プロモコードを受け取ってください。1人1コードまで、なくなり次第終了です。",
+    "button": "プロモコードをもらう"
+  },
+  "about": {
+    "title": "自己紹介",
+    "p1": "ソフトウェア開発に携わって約15年になり、App Store で公開中のアプリもいくつかあります。3年以上、会社で React-Native デベロッパーとして働き、さまざまなプロジェクトで経験を積んできました。",
+    "p2": "これまでに多くのプロジェクトに参加し、各種トレーニングの講師も務めながら、React-Native、NestJS、Node.js、Unity、Swift を使ってきました。最近は自分のアプリを SwiftUI でネイティブに作り直し、Apple Watch アプリ、ウィジェット、ヘルスケア、Siri にも対応しました。",
+    "p3": "Mac や Claude Code のようなAIコーディングエージェント向けのオープンソースツールも作っています。App Store の掲載情報の自動化からプロモーション動画、オンデバイス翻訳まで幅広く手がけています。新しい技術を学ぶことが、私の原動力です。",
+    "skills": "スキルと技術"
+  },
+  "contact": {
+    "title": "一緒に何か作りましょう",
+    "subtitle": "新しい機会やコラボレーションには、いつでも興味があります。お気軽にご連絡ください。",
+    "copy": "アドレスをコピー",
+    "copied": "コピーしました",
+    "location": "ミュンヘン、ドイツ"
+  },
+  "support": {
+    "title": "サポート",
+    "text": "ご質問やご意見、アプリについてのお困りごとがあれば、お気軽にご連絡ください。",
+    "button": "サポートに連絡"
+  }
+}

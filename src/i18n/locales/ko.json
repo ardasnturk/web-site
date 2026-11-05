@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "Arda Sentürk – iOS 앱과 오픈소스 도구",
+    "description": "Arda Sentürk는 Weightly, Finly, Lunavia, Atleva 같은 프라이버시를 지키는 네이티브 iOS 앱과 개발자를 위한 오픈소스 도구를 만드는 독립 개발자입니다."
+  },
+  "nav": {
+    "work": "작업물",
+    "updates": "업데이트",
+    "about": "소개",
+    "contact": "연락처",
+    "promo": "프로모 코드",
+    "menu": "메뉴 열기",
+    "language": "언어 변경"
+  },
+  "hero": {
+    "shipped": "새로 출시했어요: {{name}}",
+    "tagline": "프라이버시를 지키는 네이티브 iOS 앱과 개발자를 위한 오픈소스 도구를 만들어요.",
+    "ctaWork": "작업물 보기",
+    "ctaContact": "연락하기",
+    "stats": {
+      "apps": "App Store 앱",
+      "soon": "출시 예정 앱",
+      "openSource": "오픈소스 프로젝트",
+      "years": "년 소프트웨어 개발 경력"
+    }
+  },
+  "projects": {
+    "title": "제가 만든 것들",
+    "subtitle": "App Store에 출시된 앱, 출시를 준비 중인 앱, 그리고 직접 읽고 쓰고 수정할 수 있는 오픈소스 도구예요.",
+    "filters": {
+      "all": "전체",
+      "live": "App Store",
+      "comingSoon": "출시 예정",
+      "openSource": "오픈소스"
+    },
+    "status": {
+      "live": "App Store 출시",
+      "comingSoon": "출시 예정",
+      "openSource": "오픈소스"
+    },
+    "links": {
+      "appStore": "App Store",
+      "github": "GitHub",
+      "website": "웹사이트",
+      "download": "다운로드"
+    },
+    "allRepos": "GitHub의 공개 저장소 모두 보기",
+    "items": {
+      "atleva": {
+        "description": "기구 없이 하는 홈 트레이닝. 목표를 고르고 바디맵에서 집중하고 싶은 부위를 탭하면, 컨디션에 맞춰 바뀌는 플랜을 받을 수 있어요. 119개의 운동 영상은 오프라인에서도 볼 수 있어요.",
+        "update": "이제 App Store에서 만나보세요. 11개 언어를 지원해요."
+      },
+      "weightly": {
+        "description": "하루하루의 변동을 부드럽게 보여 주는 스마트 추세선이 있는 체중 기록 앱. 계정도 광고도 없고, 데이터는 내 기기에만 저장돼요.",
+        "update": "Weightly PRO 구매와 복원이 더 안정적으로 바뀌었어요."
+      },
+      "finly": {
+        "description": "iPhone과 Apple Watch용 가계부 겸 지출 기록 앱. “커피 4500”이라고 입력하면 끝. 계정도 은행 로그인도 필요 없어요.",
+        "update": "자동으로 기록된 결제를 알림에서 바로 승인하거나 삭제할 수 있어요."
+      },
+      "lunavia": {
+        "description": "예측, 빠른 기록, 출처가 있는 건강 글을 갖춘 프라이빗 생리 주기 트래커. 모든 데이터는 iPhone에만 저장돼요.",
+        "update": "구매와 복원이 더 안정적으로 바뀌었어요. 주기 데이터는 여전히 iPhone에만 저장돼요."
+      },
+      "howWell": {
+        "description": "친구들과 함께 즐기는 퀴즈 게임. 서로를 얼마나 잘 아는지 확인해 보세요."
+      },
+      "kickoff": {
+        "description": "수천 개 대회의 축구 실시간 스코어, 라인업, 통계, 알림을 무료로. Kickoff Pro에서는 모든 경기의 AI 예측도 볼 수 있어요."
+      },
+      "elemix": {
+        "description": "iPhone으로 즐기는 차분한 원소 퍼즐 게임. 재료를 조합하고, 시계를 돌리고, 온도를 맞춰서 끝없이 이어지는 레벨의 목표를 달성해 보세요."
+      },
+      "vitrin": {
+        "description": "앱 코드를 읽고 스토어 메타데이터, 스크린샷, App Preview를 만든 다음, App Store Connect 관리까지 Mac 앱 하나로 해결해요. Claude Code로 작동해요.",
+        "update": "메타데이터가 App Store 검색의 실제 방식에 맞춰 작성되고, 새로운 키워드 검사도 추가됐어요."
+      },
+      "remoteCode": {
+        "description": "Mac의 Claude Code, Codex, Gemini CLI를 iPhone이나 iPad에서 조작하세요. 종단간 암호화에 서버도 계정도 필요 없어요.",
+        "update": "App Review 알림 추가: 앱이 심사 중일 때, 승인되었을 때, 거부되었을 때 Mac과 iPhone으로 알려 드려요."
+      },
+      "promoStudio": {
+        "description": "앱 소스 코드를 짧은 세로 영상으로 바꿔 주는 Mac 앱이에요. 대본과 연출은 Claude Code가 맡고, 완성된 영상은 Instagram에 올려요.",
+        "update": "첫 번째 키의 할당량이 다 되어도 두 번째 Gemini 키로 내레이션이 이어져요."
+      },
+      "promoTemplates": {
+        "description": "코드로 만드는 세로 영상: Remotion으로 만든 물리 루프, 퍼즐, 채팅 스토리와 새 영상을 만드는 Claude Code 스킬이 들어 있어요.",
+        "update": "새로운 “Satisfying” 템플릿: 무게가 계속 늘어나면 어떻게 될까요?"
+      },
+      "polylocal": {
+        "description": "macOS용 온디바이스 AI 번역기. 어떤 앱에서든 ⌘C C로 번역하고 문장을 다듬을 수 있고, 다른 언어로 진행되는 회의도 따라갈 수 있어요. 데이터는 Mac 밖으로 나가지 않아요.",
+        "update": "말하면 번역이 자동으로 시작되고, 인터페이스는 20개 언어를 지원해요."
+      },
+      "kadraj": {
+        "description": "빠른 macOS 네이티브 스크린샷 도구: 캡처, 주석, OCR, 고정까지 지원해요."
+      },
+      "videoCompressor": {
+        "description": "동영상 용량을 줄여 주는 macOS 네이티브 메뉴 막대 앱. 영상을 끌어다 놓으면 더 작은 사본이 만들어지고, Discord, WhatsApp, 이메일용 프리셋도 있어요.",
+        "update": "이제 7개 언어를 지원해요."
+      },
+      "a11y": {
+        "description": "Expo와 React Native 앱을 위한 셀프 호스팅 접근성 크롤러. Appium으로 화면을 탐색하고 WCAG 2.2 기준으로 검사한 뒤 로컬 대시보드에 결과를 보여 줘요."
+      },
+      "pinGenerator": {
+        "description": "SVG 아이콘을 원하는 크기의 지도 핀 PNG로 바꾸고 마커 목록을 mapSettings.json에 저장하는 작은 TypeScript 도구예요."
+      }
+    }
+  },
+  "updates": {
+    "title": "최신 업데이트",
+    "subtitle": "최근에 출시한 것들을 최신순으로 소개해요."
+  },
+  "claim": {
+    "eyebrow": "나눔 이벤트",
+    "title": "제 앱을 무료로 업그레이드하세요",
+    "text": "나눔 이벤트가 열려 있는 앱을 골라 프로모 코드를 받아 가세요. 1인당 하나, 소진될 때까지 제공해요.",
+    "button": "프로모 코드 받기"
+  },
+  "about": {
+    "title": "소개",
+    "p1": "소프트웨어 개발에 몸담은 지 약 15년이 되었고, App Store에 출시한 앱도 여러 개 있어요. 3년 넘게 회사에서 React-Native 개발자로 일하며 다양한 프로젝트를 경험했어요.",
+    "p2": "그동안 많은 프로젝트에 참여하고 여러 교육도 진행하면서 React-Native, NestJS, Node.js, Unity, Swift를 다뤄 왔어요. 최근에는 제 앱들을 SwiftUI로 네이티브하게 다시 만들었고, Apple Watch 앱, 위젯, 건강, Siri도 지원해요.",
+    "p3": "Mac과 Claude Code 같은 AI 코딩 에이전트를 위한 오픈소스 도구도 만들어요. App Store 등록 정보 자동화부터 프로모션 영상, 온디바이스 번역까지 폭넓게 다뤄요. 새로운 기술을 배우는 일이 저를 계속 움직이게 해요.",
+    "skills": "기술 및 스택"
+  },
+  "contact": {
+    "title": "함께 무언가 만들어 봐요",
+    "subtitle": "새로운 기회와 협업은 언제나 환영이에요. 편하게 연락 주세요.",
+    "copy": "주소 복사",
+    "copied": "복사됨",
+    "location": "독일 뮌헨"
+  },
+  "support": {
+    "title": "지원",
+    "text": "궁금한 점이나 의견이 있거나 앱 사용에 도움이 필요하면 언제든지 연락 주세요.",
+    "button": "지원팀에 문의"
+  }
+}
